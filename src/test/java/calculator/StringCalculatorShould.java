@@ -77,4 +77,16 @@ class StringCalculatorShould {
 			e.printStackTrace();
 		}
     }
+    
+    //Question 6
+    @Test
+    void string_with_BiggerNo_return_number_as_int() {
+        StringCalculator stringCalculator = new StringCalculator();
+        try {
+			assertEquals(6, stringCalculator.add("1,1001,2,3"));
+		} catch (negativeNumberException e) {
+		
+			e.printStackTrace();
+		}
+    }
 }
